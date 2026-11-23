@@ -45,10 +45,10 @@ Es ist **kein npm, Backend, Build-Schritt, Konto oder API-Schlüssel** nötig. A
 
 ## Anpassungen
 
-- `js/questions.js`: alle 45 Fragen, Antworten, Erklärungen, Teamnamen und Preisstufen.
-- `js/app.js`: Spiellogik, Einstiegsfrage, Joker, Fortschritt, Katze, Animationen.
-- `css/styles.css`: visuelle Gestaltung und Responsive-Layout.
-- `assets/katze-segelt-davon.mp4`: originaler 8-Sekunden-Abspann mit Katze auf einem weihnachtlichen Schiff.
+- `questions.js`: alle 45 Fragen, Antworten, Erklärungen, Teamnamen und Preisstufen.
+- `app.js`: Spiellogik, Einstiegsfrage, Joker, Fortschritt, Katze, Animationen.
+- `styles.css`: visuelle Gestaltung und Responsive-Layout.
+- `katze-segelt-davon.mp4`: originaler 8-Sekunden-Abspann mit Katze auf einem weihnachtlichen Schiff.
 
 ## Quellenhinweise zu ausgewählten Spezialfragen
 

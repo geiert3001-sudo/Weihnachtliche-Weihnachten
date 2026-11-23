@@ -48,7 +48,7 @@
   }
   function catHTML(line, compact = false) {
     return `<aside class="cat-card ${compact ? 'compact' : ''}" aria-label="Kommentar der Quizkatze">
-      <img src="assets/katze-avatar.webp" alt="Käpt’n Keks, orangefarbene Katze mit Kapitänsmütze" width="67" height="67">
+      <img src="katze-avatar.webp" alt="Käpt’n Keks, orangefarbene Katze mit Kapitänsmütze" width="67" height="67">
       <div><p class="cat-name">🐾 KÄPT’N KEKS KOMMENTIERT</p><p class="cat-text">„${line}“</p></div></aside>`;
   }
   function badgeHTML() { return '<div class="pill-row"><span class="pill"><span class="bullet">✦</span> 3 Teams</span><span class="pill"><span class="bullet">✦</span> 45 Fragen</span><span class="pill"><span class="bullet">✦</span> 1 riesiges Geschenk</span></div>'; }
@@ -71,7 +71,7 @@
           ${badgeHTML()}
           <div class="btn-row"><button class="btn btn-primary" data-action="${canResume() ? 'resume' : 'startFastest'}">${canResume() ? '▶ Spiel fortsetzen' : '▶ Spielshow starten'}</button><button class="btn btn-ghost" data-action="howto">Spielregeln ↗</button></div>
         </div>
-        <div class="hero-visual"><img src="assets/katze-kapitaen.webp" alt="Eine lustige orangefarbene Katze begrüßt die Teams von einem weihnachtlichen Schiff" width="460" height="460"><div class="hero-sticker">Ihr Moderator<b>Käpt’n Keks 🐾</b></div></div>
+        <div class="hero-visual"><img src="katze-kapitaen.webp" alt="Eine lustige orangefarbene Katze begrüßt die Teams von einem weihnachtlichen Schiff" width="460" height="460"><div class="hero-sticker">Ihr Moderator<b>Käpt’n Keks 🐾</b></div></div>
       </section>
       <p class="section-caption">Die legendären Kandidaten</p><section class="teams-grid" aria-label="Teilnehmende Teams">${teamCards()}</section>
       <p class="fineprint">Alles läuft ohne Anmeldung oder Server – auch offline. Der Fortschritt wird auf diesem Gerät gespeichert.</p>`;
@@ -184,7 +184,7 @@
         <div class="winners-list">${DATA.teams.map(t=>`<div class="winner-line"><span>${t.icon} ${t.name}</span><span>🏆 1.000.000 €</span></div>`).join('')}</div>
         ${catHTML('Meine lieben Weihnachtsmillionäre: Ich segle jetzt in den Sonnenuntergang. Die Geschenke könnt ihr selber tragen. Ahoi!')}
         <div class="btn-row" style="margin-top:22px"><button class="btn btn-primary" data-action="playOutro">▶ Abspann abspielen</button><button class="btn btn-ghost" data-action="replay">Alles neu spielen ↺</button></div>
-      </div><div class="video-wrap"><video class="outro-video" id="outroVideo" controls playsinline preload="metadata" poster="assets/outro-poster.webp" aria-label="Weihnachts-Video: Käpt’n Keks segelt auf einem geschmückten Schiff davon"><source src="assets/katze-segelt-davon.mp4" type="video/mp4">Dein Browser unterstützt leider keine Videowiedergabe.</video></div></div></section>`;
+      </div><div class="video-wrap"><video class="outro-video" id="outroVideo" controls playsinline preload="metadata" poster="outro-poster.webp" aria-label="Weihnachts-Video: Käpt’n Keks segelt auf einem geschmückten Schiff davon"><source src="katze-segelt-davon.mp4" type="video/mp4">Dein Browser unterstützt leider keine Videowiedergabe.</video></div></div></section>`;
   }
   function render() {
     $('#soundToggle').textContent=state.muted?'♪̸':'♫';
