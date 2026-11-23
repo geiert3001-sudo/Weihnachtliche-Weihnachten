@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1230">
+  <meta name="description" content="Das Weihnachts-Millionenquiz: 3 Familienteams, 45 Fragen, wachsendes Geschenk und Käpt’n Keks auf großer Fahrt.">
+  <title>Weihnachts-Millionenquiz 🎄</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/questions.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="snow" aria-hidden="true"></div>
+    <header class="topbar" role="banner">
+      <a class="brand" href="#" id="homeLink" aria-label="Weihnachts-Millionenquiz – Startseite">
+        <span class="brand-icon">✦</span><span>WEIHNACHTS<span class="brand-accent">MILLIONENQUIZ</span></span>
+      </a>
+      <div class="top-controls">
+        <span class="top-note" id="topStatus">DIE FAMILIEN-SHOW</span>
+        <button id="soundToggle" class="icon-button" aria-label="Ton ausschalten" aria-pressed="true" title="Ton an/aus">♫</button>
+        <button id="resetButton" class="icon-button" title="Spielstand zurücksetzen" aria-label="Spielstand zurücksetzen">↺</button>
+      </div>
+    </header>
+    <main id="app" tabindex="-1" aria-live="polite"></main>
+    <footer class="page-footer"><span>✦ Ein Weihnachtsabend, drei Chancen auf die Million.</span><span>Mit Käpt’n Keks · 2026</span></footer>
+  </div>
+  <div class="toast-container" id="toastLayer" aria-live="assertive"></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+</body>
+</html>
